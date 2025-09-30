@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs | Aadya Builders & Estates</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #333;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    /* Header */
+    .header {
+      background: #040e3f;
+      padding: 15px 0;
+    }
+    .header .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .logo {
+      height: 40px;
+    }
+    .brand-name {
+      font-weight: 600;
+      color: #fff;
+      margin-left: 10px;
+    }
+    .nav-menu .nav-list {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    .nav-menu a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-menu a.active,
+    .nav-menu a:hover {
+      color: #fff;
+    }
+
+    /* Blog Section */
+    .blog-section {
+      padding: 70px 0;
+      background: #fff;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .section-subtitle {
+      margin-bottom: 40px;
+      color: #777;
+    }
+
+    /* Blog Grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    /* Blog Card */
+    .blog-card {
+      background: #fdfdfd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .blog-card:hover {
+      transform: translateY(-8px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-content {
+      padding: 20px;
+      text-align: left;
+    }
+    .blog-meta {
+      font-size: 0.9rem;
+      color: #777;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .blog-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .blog-content p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .blog-content .btn {
+      display: inline-block;
+      background: #2742db;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .blog-content .btn:hover {
+      background: #f39c12;
+    }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo-container">
+      <img src="asset/images/logo.png" alt="Aadya Builders Logo" class="logo">
+      <span class="brand-name">AADYA BUILDERS & ESTATES</span>
+    </a>
+    <!-- Navigation -->
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+        <li class="nav-item" id="nav_list_item">
+          <a href="index.html#projects" class="nav-link">Villa Project</a>
+          <ul id="nav_list_item_child">
+            <li class="child_list_item"><a href="luxury.html" target="_blank">East Facing Villa</a></li>
+            <li class="child_list_item"><a href="exclusive.html" target="_blank">West Facing Villa</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</header>
+
+<!-- Blog Section -->
+<section class="blog-section">
+  <div class="container">
+    <h2 class="section-title">Our Blogs</h2>
+    <p class="section-subtitle">Stay updated with the latest trends, insights, and news from the construction industry.</p>
+    
+    <div class="blog-grid">
+      <!-- Blog Card 1 -->
+      <article class="blog-card">
+        <img src="asset/images/construction-image1.jpg" alt="Sustainable Construction">
+        <div class="blog-content">
+          <span class="blog-meta"><i class="far fa-calendar"></i> June 09, 2025 | <i class="far fa-user"></i> Aadya Builders & Estates</span>
+          <h3> 5 Reasons Why Villas Are the Best Real Estate Investment in 2025</h3>
+          <p>Real estate has always been one of the safest and most rewarding forms of investment. But in 2025, with markets shifting and demand patterns evolving, villas stand out as the ultimate investment choice. Unlike apartments or commercial spaces, villas offer both emotional value as homes and financial strength as appreciating assets.</p>
+          <a href="blog1.html" class="btn">Read More</a>
+        </div>
+      </article>
+      
+      <!-- Blog Card 2 -->
+      <article class="blog-card">
+        <img src="asset/images/construction-image2.jpg" alt="Construction Technology">
+        <div class="blog-content">
+          <span class="blog-meta"><i class="far fa-calendar"></i> July 26, 2025 | <i class="far fa-user"></i> Aadya Builders & Estates</span>
+          <h3>Why Patancheruvu is Hyderabad's Hottest Location for Luxury Villas in 2025</h3>
+          <p>In real estate, location is key. Patancheruvu has grown from an industrial area into a prime residential hub with great connectivity, modern infrastructure, and strong future value—making it the top choice for homebuyers.</p>
+          <a href="blog2.html" class="btn">Read More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Aadya Builders & Estates</h3>
+        <p>Building excellence. We specialize in residential, commercial, and industrial construction projects with a focus on quality and innovation.</p>
+        <div class="social-links" style="margin-top: 20px;">
+          <a href="https://www.facebook.com/share/1FmierzSXE/" class="social-link" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/aadya_builders_estates?igsh=MXV6aWEzOGY3NHFkeA==" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/aadya-builders-and-estates/" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#amenities">Amenities</a></li>
+          <li><a href="index.html#projects">Villa Project</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Privacy Policy</h3>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" target="_blank">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul class="footer-links">
+          <li><i class="fas fa-map-marker-alt"></i> 782/A Plot, 3rd Floor, Road No 40, CBI Colony, Jubilee Hills, Hyderabad, 500033.</li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+918019597755">+91 80195 97755</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@aadyabuildersestates.com">info@aadyabuildersestates.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Aadya Builders & Estates. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Floating Action Buttons -->
+<div class="fab-container">
+    <!-- WhatsApp -->
+<a href="https://wa.me/918019597755?text=Hi%2C%20I%27m%20interested%20in%20your%20luxury%20residential%20project.%20Could%20you%20provide%20more%20details%20about%20villa%20project%3F" class="fab fab-whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
